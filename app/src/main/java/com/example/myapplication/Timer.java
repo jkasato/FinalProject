@@ -51,7 +51,7 @@ class Timer extends Thread {
         while (true) {
             try {
                 if (isRunning) {
-                    controller.changeTimerDisplay(timePlayed);
+                    //controller.changeTimerDisplay(timePlayed);
                     doNothing(1000);
                     timePlayed++;
                 } else {

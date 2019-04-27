@@ -25,11 +25,17 @@ public class TabTwo extends Fragment {
 }
 
 class AppModel {
-    private final Timer timer;
+    private final Timer timer = null;
 
     public AppModel(Timer timer) {
-//        EditText timeText=findview
-        new CountDownTimer( 1.8e+7, 1000 ) {
+
+        LayoutInflater inflater = null;
+        ViewGroup pager=null;
+        View timeView=inflater.inflate(R.layout.tab_two,pager,false);
+        final TextView timeText=(TextView) timeView.findViewById( R.id.timeText );
+        //timeView.setText
+
+        new CountDownTimer( (long) 1.8e+7, 1000 ) {
             public void onTick(long millisUntilFinished) {
                 timeText.setText( "Hours remaining: " + millisUntilFinished / 1000 );
             }
@@ -49,7 +55,7 @@ class AppView extends AppCompatActivity {
     }
 
     public int getTime() {
-        final EditText txtTimerTime = findViewById( R.id.timeText );
+        final TextView txtTimerTime = findViewById( R.id.timeText );
         String editTextValue = txtTimerTime.getText().toString();//returns the number as a String
         String timeString = txtTimerTime.getText().toString();//assign courseNumber to EditText field
         int timeNum = Integer.parseInt( timeString );//makes courseNumber an int
