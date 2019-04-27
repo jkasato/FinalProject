@@ -1,10 +1,43 @@
 <resources>
     <string name="app_name">My Application</string>
+    <!--title-->
+    <string name="foodTruckScheduler">Food Truck Scheduler</string>
 
-    <string name="food_truck_scheduler">Food Truck Scheduler</string>
-    <string name="sign_up">Sign-up</string>
+    <!--throw away strings-->
+    <string name="tab1">Tab1</string>
+    <string name="enterButton">Button</string>
+
+    <!--tab names-->
+    <string name="signUp">Sign-up</string>
     <string name="map">Map</string>
     <string name="timer">Timer</string>
-    <string name="tab1">Tab1</string>
-    <string name="button">Button</string>
+    <string name="random_location_and_time">Random Location and Time</string>
+    <string name="Enter">Enter</string>
+    <string name="you_now_have_5_hours">You now have 5 hours</string>
+
+    <!--truckName string array-->
+    <string-array name="truckNamesArray">
+        <item>Tacos Durango</item>
+        <item>Two Angry Guys</item>
+        <item>Quickly\'s</item>
+        <item>The Hot Spot</item>
+        <item>Romson\'s Kebab</item>
+    </string-array>
+
+    <!--locationNames string array-->
+    <string-array name="locationNamesArray">
+        <item>Scholar\'s Lane at UC Merced </item>
+        <item>Library Quad at UC Merced</item>
+        <item>15th and Canal Street </item>
+        <item>11th and Martin Luther King Way</item>
+        <item>15th and R Street</item>
+    </string-array>
+
+    <!--timeNames string array-->
+    <string-array name="timeNamesArray">
+        <item>Morning 6am-11am</item>
+        <item>Afternoon 11am-4pm</item>
+        <item>Evening 4pm-9pm</item>
+        <item>Late Night 9pm-2am</item>
+    </string-array>
 </resources>

@@ -16,7 +16,7 @@ import com.example.myapplication.R;
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @StringRes
-    private static final int[] TAB_TITLES = new int[]{R.string.sign_up, R.string.timer,R.string.map};
+    private static final int[] TAB_TITLES = new int[]{R.string.signUp, R.string.timer,R.string.map};
     private final Context mContext;
 
     public SectionsPagerAdapter(Context context,FragmentManager fm) {
